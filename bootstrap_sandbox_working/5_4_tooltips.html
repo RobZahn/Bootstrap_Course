@@ -184,20 +184,29 @@
       <br />
 
       <!-- TOOLTIPS WITH HTML -->
-      <button class="btn btn-primary">Tooltip On With HTML</button>
+      <button
+        id="hello"
+        class="btn btn-primary"
+        data-toggle="tooltip"
+        data-placement="top"
+        data-html="true"
+        title="<h3>Hello</h3><p>Hello World</p>"
+      >
+        Tooltip On With HTML
+      </button>
 
       <hr />
 
       <!-- TRIGGER WITH JS -->
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" onclick="showTooltip()">
         Show Tooltip
       </button>
 
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" onclick="hideTooltip()">
         Hide Tooltip
       </button>
 
-      <button class="btn btn-secondary">
+      <button class="btn btn-secondary" onclick="toggleTooltip()">
         Toggle Tooltip
       </button>
     </div>
@@ -222,6 +231,35 @@
     <script>
       // Init Tooltips
       $('[data-toggle="tooltip"]').tooltip();
+
+      function showTooltip() {
+        $("#hello").tooltip("show");
+      }
+
+      function hideTooltip() {
+        $("#hello").tooltip("hide");
+      }
+
+      function toggleTooltip() {
+        $("#hello").tooltip("toggle");
+      }
+
+      // Tooltip Events
+      $("#hello").on("show.bs.tooltip", function () {
+        console.log("Tooltip Show");
+      });
+
+      $("#hello").on("shown.bs.tooltip", function () {
+        console.log("Tooltip Shown");
+      });
+
+      $("#hello").on("hide.bs.tooltip", function () {
+        console.log("Tooltip Hide");
+      });
+
+      $("#hello").on("hidden.bs.tooltip", function () {
+        console.log("Tooltip Hidden");
+      });
     </script>
   </body>
 </html>
