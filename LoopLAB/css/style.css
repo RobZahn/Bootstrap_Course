@@ -3,9 +3,23 @@ body {
   color: #fff;
 }
 
-.navbar {
+#main-nav .navbar {
   border-bottom: 3px solid #008ed6;
   opacity: 0.8;
+}
+
+#navbarCollapse ul li a {
+  margin-right: 2rem;
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+#navbarCollapse ul li a:hover {
+  border-bottom: 3px solid #008ed6;
+}
+
+#logo-color {
+  color: #008ed6;
 }
 
 /* HOME */
