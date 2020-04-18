@@ -29,6 +29,7 @@ body {
   position: relative;
   background: url("../img/mountains.jpg");
   min-height: 600px;
+  height: 75vh;
 
   .primary-overlay {
     background: $primary-overlay;
@@ -46,6 +47,14 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+#about,
+#authors,
+#contact {
+  .container {
+    padding: 6rem 0;
+  }
+}
+
 #authors {
   img {
     margin-top: -50px;
@@ -60,6 +69,13 @@ body {
   .fab {
     color: #fff;
   }
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin: -50px 0 0;
 }
 
 @media (max-width: 768px) {
