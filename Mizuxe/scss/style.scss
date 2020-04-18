@@ -30,3 +30,17 @@ body {
     height: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
