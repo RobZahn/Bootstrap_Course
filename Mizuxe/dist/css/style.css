@@ -14,6 +14,16 @@ body {
   padding-right: 1.4rem;
 }
 
+.navbar .nav-item a {
+  border-bottom: 5px solid transparent;
+  -webkit-transition: border-bottom 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+}
+
+.navbar .nav-item a:hover {
+  border-bottom: 5px solid rgba(50, 146, 166, 0.8);
+}
+
 #showcase {
   position: relative;
   background: url("../img/mountains.jpg");
