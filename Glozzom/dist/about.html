@@ -175,6 +175,50 @@
       </div>
     </section>
 
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="row text-center">
+          <div class="col">
+            <div class="slider">
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, beatae.
+                  </p>
+                  <footer class="blockquote-footer">John Doe</footer>
+                  <cite title='Company 1'>Company 1</cite>
+                </blockquote>
+              </div>
+
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, consectetur! Iure repellendus distinctio mollitia aperiam illo quasi neque laudantium itaque.
+                  </p>
+                  <footer class="blockquote-footer">Sam Smith</footer>
+                  <cite title='Company 1'>Company 2</cite>
+                </blockquote>
+              </div>
+
+              <div>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quos sapiente veritatis voluptate cupiditate explicabo odit, reprehenderit unde eaque deleniti quo error vel? Error, culpa ullam.
+                  </p>
+                  <footer class="blockquote-footer">Meghan Williams</footer>
+                  <cite title='Company 1'>Company 3</cite>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -200,6 +244,12 @@
     <script>
       // Get current year for copyright
       $("#year").text(new Date().getFullYear());
+
+      $('.slider').slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      })
     </script>
   </body>
 </html>
