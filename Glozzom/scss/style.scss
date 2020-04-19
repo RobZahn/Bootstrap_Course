@@ -130,3 +130,20 @@ body {
 .about-img {
   margin-top: -50px;
 }
+
+// Services
+#faq {
+  .card {
+    border: 1px solid #444;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .card-body,
+  .card-header {
+    background: #333;
+  }
+}
