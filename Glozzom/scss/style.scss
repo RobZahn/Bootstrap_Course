@@ -13,7 +13,20 @@
 }
 
 // SHOWCASE
-.carousel-item {
-  height: 450px;
-  background-size: cover;
+.carousel {
+  &-item {
+    position: relative;
+    height: 450px;
+    background-size: cover;
+    top: 0px;
+  }
+
+  img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+  }
 }
