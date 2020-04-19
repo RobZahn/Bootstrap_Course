@@ -1,3 +1,14 @@
+// Utility
+
+%overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 // NAVIGATION
 .navbar {
   .nav-link {
@@ -25,12 +36,7 @@
     position: relative;
 
     .carousel-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      @extend %overlay;
     }
 
     h1,
@@ -47,5 +53,25 @@
     top: 0;
     bottom: 0;
     margin: auto auto;
+  }
+}
+
+#home-icons {
+  .container {
+    padding-top: 2rem;
+  }
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../../dist/img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+
+  &-overlay {
+    @extend %overlay;
   }
 }
