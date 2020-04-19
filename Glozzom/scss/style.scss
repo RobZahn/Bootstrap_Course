@@ -9,6 +9,10 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 // NAVIGATION
 .navbar {
   .nav-link {
@@ -60,7 +64,7 @@
 
 #home-icons {
   .container {
-    padding: 4rem;
+    padding: 4.1rem;
   }
 }
 
