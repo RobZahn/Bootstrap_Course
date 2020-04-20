@@ -117,9 +117,6 @@
               ><i class="fas fa-plus pr-1"></i> Add User</a
             >
           </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
         </div>
       </div>
     </section>
@@ -196,9 +193,11 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="title">Title</label>
+                <label for="title">Category Name</label>
                 <input type="text" class="form-control" />
               </div>
+            </form>
+          </div>
 
           <div class="modal-footer">
             <button class="btn btn-outline-success" data-dismiss="modal">
@@ -209,13 +208,13 @@
       </div>
     </div>
 
-    <!-- ADD USER MODAL -->
+    <!-- ADD CATEGORY MODAL -->
 
-    <div id="addCategoryModal" class="modal fade">
+    <div id="addUserModal" class="modal fade">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header bg-success text-white">
-            <h5 class="modal-title">Add Category</h5>
+          <div class="modal-header bg-warning text-white">
+            <h5 class="modal-title">Add User</h5>
             <button class="close" data-dismiss="modal">
               <span>&times;</span>
             </button>
@@ -224,12 +223,26 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="title">Title</label>
+                <label for="name">Name</label>
                 <input type="text" class="form-control" />
               </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" class="form-control" />
+              </div>
+            </form>
+          </div>
 
           <div class="modal-footer">
-            <button class="btn btn-outline-success" data-dismiss="modal">
+            <button class="btn btn-outline-warning" data-dismiss="modal">
               Save Changes
             </button>
           </div>
